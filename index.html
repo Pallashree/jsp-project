@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+  <div class="navbar">
+     <div class="navbar__left">
+       <img src="http://www.saintagnesschool.org/wp-content/uploads/cropped-Web-Logo.png" alt="logo" />
+       <h4>St. Agnes Convent School</h4>
+     </div>
+     
+     <div class="navbar__right">
+       <h4>Home</h4>
+       <h4>Notice</h4>
+       <h4>About Us</h4>
+       <h4>Contact Us</h4>
+     </div>
+  </div>
+  
+  <div class="container">
+    <img src="http://stagneskazikhera.org.in/img/slider/1-1.jpg" alt="container-image" />
+    <div class="container__formWrapper">
+	    <div class="container__Login">
+	       <form autocomplete="off" action="adminLogin.jsp" class="adminForm" method="post" onsubmit="return handleAdminFromSubmit(event)">
+	       <div class="container__logoWrapper">
+	         <img class="container__Logo" src="styles/assets/user.png" alt="admin_logo" /> 
+	       </div>
+	         <h3>Admin Login</h3>
+	         
+	         <div>
+	            <span class="material-icons icon">
+                    account_circle
+                </span>
+	            <input type="text" name="name" class="adminName" placeholder="User Name" >
+	    
+	         </div>
+	         <p class="adminNameErrorMsg"></p>
+	         <div>
+	             <span class="material-icons icon">
+					lock
+				</span>
+	            <input type="password" name="password" class="adminPassword" placeholder="Password" >
+	            <span class="material-icons icon eyeIcon">
+					visibility_off
+				</span>
+	         </div>
+	         <p class="adminPasswordErrorMsg"></p>
+	         <span class="invalidMsg"></span>
+	         <button type="submit">Login</button>
+	       </form>
+	    </div>
+	    <div class="container__Login">
+	      <form autocomplete="off">
+	      <div class="container__logoWrapper">
+	         <img class="container__Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7nFdX1g_CVR4WyP5LgKOGytP0J8PE53_RQ&usqp=CAU" alt="admin_logo" /> 
+	       </div>
+	         <h3>Student Login</h3>
+	         
+	         <div>
+	            <span class="material-icons icon">
+                    account_circle
+                </span>
+	            <input type="text" name="roll" placeholder="Roll No." >
+	         </div>
+	         
+	         <div>
+	             <span class="material-icons icon">
+					lock
+				</span>
+	            <input type="password" name="password" placeholder="Password" >
+	         </div>
+	    
+	         <button type="submit">Login</button>
+	       </form>
+	    </div>      
+    </div>
+
+  </div>
+	
+<script src="scripts/index.js"></script>
+</body>
+</html>
